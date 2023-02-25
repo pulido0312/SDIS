@@ -1,0 +1,2 @@
+Clave ServerKeystore: 123456
+Clave ClientTruststore: 654321
