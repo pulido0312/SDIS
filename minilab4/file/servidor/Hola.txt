@@ -1,0 +1,10 @@
+4. Dos interfaces sobre el mismo objeto.
+Cada objeto representa un recurso del programa,
+ en otras palabras una pequeña parte del estado de toda la aplicación. 
+Observa el diagrama siguiente donde se muestran dos capas de diseño de una aplicación:
+
+Dos servicios sobre el mismo recurso base??
+
+En el nivel inferior disponemos de un recurso ,
+ soportado por la plataforma en la que se asientan otros dos servicios A y B. E
+n ellos mostramos dos vistas de dicho recurso  y  que se ven desde el punto de vista de usuario como dos recursos distintos, cada uno con su interfaz propia. En otras palabras, dos vistas del mismo objeto de un modelo inferior. Verás en alguna asignatura las formas de plasmar esto y diseñarlo. En nuestro caso, podemos estar interesados en gestionarlo desde un mismo objeto que mantiene la consistencia de las vistas, y mostrarlo como dos tipos de datos distintos en Java RMI. Esto no es nada nuevo y veamos cómo se consigue en un ejemplo derivado de Hello donde podemos variar el mensaje con el que nos responde el objeto remoto del servicio.
